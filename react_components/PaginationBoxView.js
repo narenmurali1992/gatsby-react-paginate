@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PageView from './PageView';
 import BreakView from './BreakView';
+import Link from 'gatsby-link';
 
 export default class PaginationBoxView extends Component {
   static propTypes = {
@@ -368,9 +369,9 @@ export default class PaginationBoxView extends Component {
     return (
       <ul className={containerClassName}>
         <li className={previousClasses}>
-          <a
+          <Link
             className={previousLinkClassName}
-            href={this.hrefBuilder(selected - 1)}
+            to={this.hrefBuilder(selected - 1)}
             tabIndex="0"
             role="button"
             onKeyPress={this.handlePreviousPage}
@@ -380,15 +381,15 @@ export default class PaginationBoxView extends Component {
             {...this.getEventListener(this.handlePreviousPage)}
           >
             {previousLabel}
-          </a>
+          </Link>
         </li>
 
         {this.pagination()}
 
         <li className={nextClasses}>
-          <a
+          <Link
             className={nextLinkClassName}
-            href={this.hrefBuilder(selected + 1)}
+            to={this.hrefBuilder(selected + 1)}
             tabIndex="0"
             role="button"
             onKeyPress={this.handleNextPage}
@@ -398,7 +399,7 @@ export default class PaginationBoxView extends Component {
             {...this.getEventListener(this.handleNextPage)}
           >
             {nextLabel}
-          </a>
+          </Link>
         </li>
       </ul>
     );
