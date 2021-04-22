@@ -1,5 +1,7 @@
 # gatsby-react-paginate
 
+Since there is no plugin for adding pagination in gatsby, I am resusing this component and using gatsby link tag, All credits to the original creator forked from [react-paginate](https://github.com/AdeleD/react-paginate)
+
 [![NPM](https://nodei.co/npm/react-paginate.png?downloads=true)](https://nodei.co/npm/react-paginate/)
 [![Build Status](https://travis-ci.org/AdeleD/react-paginate.svg?branch=master)](https://travis-ci.org/AdeleD/react-paginate)
 
