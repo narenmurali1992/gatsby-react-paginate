@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PageView from './PageView';
 import BreakView from './BreakView';
-import { Link } from 'gatsby-link';
+import { Link } from "gatsby";
 
 export default class PaginationBoxView extends Component {
   static propTypes = {
